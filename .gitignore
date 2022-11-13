@@ -1,5 +1,4 @@
-.DS_Store
-./old
+old
 node_modules
-/logo
+logo
 hehe.jpeg
