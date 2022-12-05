@@ -8,6 +8,7 @@
     <title>ICEIS'23</title>
 
     <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -49,7 +50,7 @@
                         aria-label="Global">
                         <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
                             <div class="flex items-center justify-between w-full md:w-auto">
-                                <a href="/">
+                                <a href="index.html">
                                     <span class="sr-only">Workflow</span>
                                     <img class="h-12 w-auto" src="images/ju_logo_name.png" alt="">
                                 </a>
@@ -79,7 +80,7 @@
                         </div>
                         <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
                             <span class="inline-flex rounded-md shadow">
-                                <a href="/register-iceis.html"
+                                <a href="register-iceis.html"
                                     class="inline-flex items-center px-4 py-2 border border-transparent text-base font-normal rounded-md text-white shadow-md bg-indigo-600 hover:bg-indigo-700">
                                     Register Now </a>
                             </span>
@@ -90,7 +91,7 @@
                     class="hidden absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
                     <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                         <div class="px-5 pt-4 flex items-center justify-between">
-                            <a href="/">
+                            <a href="index.html">
                                 <img class="h-8 w-auto" src="images/ju_logo_name.png" alt="">
                             </a>
                             <div class="-mr-2">
@@ -121,7 +122,7 @@
                             <a href="#comittee"
                                 class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Committee</a>
                         </div>
-                        <a href="/register-iceis.html"
+                        <a href="register-iceis.html"
                             class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
                             Register Now </a>
                     </div>
@@ -152,7 +153,7 @@
                     </div>
                     <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
                         <div class="rounded-md shadow">
-                            <a href="/register-iceis.html"
+                            <a href="register-iceis.html"
                                 class="w-full flex items-center shadow-sm justify-center px-8 py-2 border border-transparent text-base font-normal rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-2 md:text-lg md:px-8">
                                 Register Now </a>
                         </div>
@@ -177,14 +178,22 @@
             </div>
             <div class="w-full">
                 <p class="mt-4 md:mt-0 text-lg font-light text-gray-700">A two-day International Conference on Chemical
-                    Engineering Innovations and Sustainability (ICEIS) is being organized by the Chemical Engineering
-                    Department of Jadavpur University, Kolkata, on 26-27 February, 2023, on the auspicious occasion of
-                    Centenary Celebration of the Chemical Engineering Department. ICEIS-2023 intends to present a
-                    platform to students, researchers, academicians, scientists, engineers and industry professionals to
-                    exchange their views, knowledge and ideas on recent innovations in the field of Chemical Engineering
-                    with interdisciplinary applications. ICEIS-2023 will organize plenary & keynote sessions by eminent
-                    experts. Oral technical sessions and poster presentation sessions covering accepted extended
-                    abstracts will also be held under the conference.</p>
+                    Engineering Innovations and Sustainability (ICEIS)
+                    is being organized by the Chemical Engineering
+                    Department of Jadavpur University, Kolkata, on
+                    26-27 February, 2023, on the auspicious occasion
+                    of Centenary Celebration of the Chemical
+                    Engineering Department. ICEIS-2023 intends to
+                    present a platform to students, researchers,
+                    academicians, scientists, engineers and industry
+                    professionals to exchange their views, knowledge
+                    and ideas on recent innovations in the field of
+                    Chemical Engineering with interdisciplinary
+                    applications. ICEIS-2023 will organize plenary &
+                    keynote sessions by eminent experts. Oral
+                    technical sessions and poster presentation
+                    sessions covering accepted extended abstracts
+                    will also be held under the conference.</p>
             </div>
         </div>
     </div>
@@ -328,11 +337,12 @@
     </div>
 
     <!-- <div id="timeline" class="bg-gray-50 flex flex-row items-center justify-center gap-36 py-16 mx-auto px-12 md:px-24"> -->
+
     <div id="timeline" class="bg-gray-50 py-16 mx-auto px-12 md:px-24">
         <p class="mt-1 text-4xl text-center font-extrabold text-rose-500 sm:text-5xl sm:tracking-tight lg:text-5xl">
             Timeline</p>
-        <ol class="mt-12 relative border-l border-gray-200">
-            <li class="mb-10 ml-6">
+        <ol class="mt-12 relative border-l border-gray-200 items-center sm:flex">
+            <li class="relative mb-6 sm:mb-0">
                 <span
                     class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-indigo-200 rounded-full ring-8 ring-white">
                     <svg aria-hidden="true" class="w-3 h-3 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"
@@ -342,11 +352,14 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </span>
-                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Abstract Submission
+                <div class="mt-10 sm:pr-8">
+                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Extended Abstract Submission
                 </h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-indigo-700">December 7th, 2022</time>
+                <time class="block mb-2 text-sm font-normal leading-none text-indigo-700">December 25th, 2022</time>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUkqKLwjMD9GuVQ3UOfYQk-kwD8j0oUVfb1RShWduOEbLVNg/viewform?usp=sf_link" class="absolute inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700" target="_blank">Submit Here</a>
+            </div>
             </li>
-            <li class="mb-10 ml-6">
+            <li class="relative mb-6 sm:mb-0">
                 <span
                     class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-indigo-200 rounded-full ring-8 ring-white">
                     <svg aria-hidden="true" class="w-3 h-3 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"
@@ -356,10 +369,12 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </span>
+                <div class="mt-10 sm:pr-8">
                 <h3 class="mb-1 text-lg font-semibold text-gray-900">Acceptance of Abstract</h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-indigo-700">December 14th, 2022</time>
+                <time class="block mb-2 text-sm font-normal leading-none text-indigo-700">January 5th, 2023</time>
+                </div>
             </li>
-            <li class="ml-6">
+            <li class="relative mb-6 sm:mb-0">
                 <span
                     class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-indigo-200 rounded-full ring-8 ring-white">
                     <svg aria-hidden="true" class="w-3 h-3 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"
@@ -369,10 +384,12 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </span>
+                <div class="mt-10 sm:pr-8">
                 <h3 class="mb-1 text-lg font-semibold text-gray-900">Full Paper Submissions</h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-indigo-700">January 1st, 2023</time>
+                <time class="block mb-2 text-sm font-normal leading-none text-indigo-700">January 7th, 2023</time>
+                </div>
             </li>
-            <li class="ml-6">
+            <li class="relative mb-6 sm:mb-0">
                 <span
                     class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-indigo-200 rounded-full ring-8 ring-white">
                     <svg aria-hidden="true" class="w-3 h-3 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"
@@ -382,10 +399,11 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </span>
+                <div class="mt-10 sm:pr-8">
                 <h3 class="mb-1 text-lg font-semibold text-gray-900">Closing of Early Bird Registration</h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-indigo-700">January 15th, 2023</time>
+                <time class="block mb-2 text-sm font-normal leading-none text-indigo-700">January 15th, 2023</time></div>
             </li>
-            <li class="ml-6">
+            <li class="relative mb-6 sm:mb-0">
                 <span
                     class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-indigo-200 rounded-full ring-8 ring-white">
                     <svg aria-hidden="true" class="w-3 h-3 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"
@@ -395,8 +413,9 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </span>
+                <div class="mt-10 sm:pr-8">
                 <h3 class="mb-1 text-lg font-semibold text-gray-900">Closing of Registration</h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-indigo-700">February 20th, 2023</time>
+                <time class="block mb-2 text-sm font-normal leading-none text-indigo-700">February 20th, 2023</time></div>
             </li>
         </ol>
 
@@ -412,12 +431,39 @@
                 2023</span> to <span class="font-medium text-indigo-600">iceis@jadavpuruniversity.in</span>
         </p>
         <div class="mx-auto text-center mt-8">
-            <a href="https://docs.google.com/document/d/1lF53sS9weEuWkRCIBXIvnNTHEhOIH1ph/edit" target="_blank"
-                class="py-2 px-4 rounded-md hover:bg-gray-50 border-indigo-600 border text-gray-600">Click here to view
-                Guidelines</a>
+            <button class="py-2 px-4 rounded-md hover:bg-gray-50 border-indigo-600 border text-gray-600" type="button" data-modal-toggle="defaultModal">
+                Click here to view guidelines
+              </button>        
         </div>
     </div>
-
+    
+    <!--Guidelines modal -->
+<div id="defaultModal" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+    <div class="relative w-full h-full max-w-md md:h-auto">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                    Guidelines
+                </h3>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="defaultModal">
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 space-y-6">
+                <img src="images/guidelines-iceis.jpg"/>
+            </div>
+            <!-- Modal footer -->
+            <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button data-modal-toggle="defaultModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">OK</button>
+                <!-- <button data-modal-toggle="defaultModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button> -->
+            </div>
+        </div>
+    </div>
+</div>
     <div id="comittee" class="">
         <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
             <!-- <div class="text-center plenary-speaker">
@@ -432,8 +478,32 @@
                 </div>
             </div> -->
             <div class="text-center international-advisory">
+            <p class="mt-12 text-4xl font-extrabold text-gray-900 sm:text-3xl sm:tracking-tight lg:text-3xl"><span
+                    class="text-indigo-600">Organising</span> Committee</p>       
+                </div>
+<dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:divide-gray-700">
+    <div class="flex flex-col pb-3">
+        <dd class="text-lg font-semibold">Patron</dd>
+        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Prof. Chiranjib Bhattacharjee</dt>
+        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Pro Vice-Chancellor, Jadavpur University, India</dt>
+    </div>
+    <div class="flex flex-col py-3">
+        <dd class="text-lg font-semibold">Chairman</dd>
+        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Prof Rajat Chakraborty, Head, Chemical Engineering</dt>
+    </div>
+    <div class="flex flex-col pt-3">
+        <dd class="text-lg font-semibold">Coordinators, Centenary Celebration</dd>
+        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400"><table><tr><td>Dr. Sudeshna Saha &ensp;</td><td>Dr. Mehabub Rahaman</td></tr><tr><td>Dr. Ratna Dutta</td><td>Dr. Saswata Bose</td></tr></table></dt>
+    </div>
+    <div class="flex flex-col pt-3">
+        <dd class="text-lg font-semibold">Conference Conveners</dd>
+        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400"><table><tr><td>Prof. R. Chowdhury &ensp;</td><td>Prof. K.Kargupta &ensp;</td><td>Prof. P.Das</td></tr></table></dt>
+    </div>
+</dl>
+
+            <div class="text-center international-advisory">
                 <p class="mt-12 text-4xl font-extrabold text-gray-900 sm:text-3xl sm:tracking-tight lg:text-3xl"><span
-                        class="text-indigo-600">Advisory</span> Comittee</p>
+                        class="text-indigo-600">Advisory</span> Committee</p>
                 <div
                     class="mt-8 grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-y-4 md:gap-x-10 text-gray-700 text-md justify-center items-center">
                     <div class="flex flex-col">
@@ -446,7 +516,7 @@
                     </div>
                     <div class="flex flex-col">
                         <p>Prof Duygu Kocaefe</p>
-                        <p class="text-indigo-600 font-medium">Université du Québec à Chicoutimi</p>
+                        <p class="text-indigo-600 font-medium">Université du Québec à Chicoutimi, Canada</p>
                     </div>
                     <div class="flex flex-col">
                         <p>Prof Sharmistha Basu-Dutt</p>
@@ -458,47 +528,94 @@
                     </div>
                     <div class="flex flex-col">
                         <p>Prof Pinaki Bhattacharya</p>
-                        <p class="text-indigo-600 font-medium">Chem Engg, JU</p>
+                        <p class="text-indigo-600 font-medium">Retd. Prof. & Ex-Head, Jadavpur University, India</p>
                     </div>
                     <div class="flex flex-col">
                         <p>Prof Siddhartha Dutta</p>
-                        <p class="text-indigo-600 font-medium">Chem Engg, JU</p>
+                        <p class="text-indigo-600 font-medium">Ex Pro-VC & Ex-Head, Jadavpur University, India</p>
                     </div>
                     <div class="flex flex-col">
                         <p>Prof Sirshendu De</p>
-                        <p class="text-indigo-600 font-medium">IIT KGP</p>
+                        <p class="text-indigo-600 font-medium">IIT Kharagpur, India</p>
                     </div>
                     <div class="flex flex-col">
                         <p>Prof Sunando Dasgupta</p>
-                        <p class="text-indigo-600 font-medium">IIT KGP</p>
+                        <p class="text-indigo-600 font-medium">IIT Kharagpur, India</p>
                     </div>
                     <div class="flex flex-col">
                         <p>Prof. Runu Chakraborty</p>
-                        <p class="text-indigo-600 font-medium">FTBE, JU</p>
+                        <p class="text-indigo-600 font-medium">Jadavpur University, India</p>
                     </div>
                     <div class="flex flex-col">
                         <p>Prof Sampa Chakrabarti</p>
-                        <p class="text-indigo-600 font-medium">Calcutta University</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <p>Prof Rabibrata Mukherjee</p>
-                        <p class="text-indigo-600 font-medium">IIT KGP</p>
+                        <p class="text-indigo-600 font-medium">Calcutta University, India</p>
                     </div>
                     <div class="flex flex-col">
                         <p>Prof Rajdip Bandyopadhyaya</p>
-                        <p class="text-indigo-600 font-medium">IIT Bombay</p>
+                        <p class="text-indigo-600 font-medium">IIT Bombay, India</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Prof Rabibrata Mukherjee</p>
+                        <p class="text-indigo-600 font-medium">IIT Kharagpur, India</p>
                     </div>
                     <div class="flex flex-col">
                         <p>Prof Manaswita Bose</p>
-                        <p class="text-indigo-600 font-medium">IIT Bombay</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <p>Prof Jayati Sarkar</p>
-                        <p class="text-indigo-600 font-medium">IIT Delhi</p>
+                        <p class="text-indigo-600 font-medium">IIT Bombay, India</p>
                     </div>
                     <div class="flex flex-col">
                         <p>Prof Keka Ojha</p>
-                        <p class="text-indigo-600 font-medium">ISM Dhanbad</p>
+                        <p class="text-indigo-600 font-medium">ISM Dhanbad, India</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Prof Jayati Sarkar</p>
+                        <p class="text-indigo-600 font-medium">IIT Delhi, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center international-advisory">
+                <p class="mt-12 text-4xl font-extrabold text-gray-900 sm:text-3xl sm:tracking-tight lg:text-3xl"><span
+                        class="text-indigo-600">Committee</span> Members</p>
+                <div
+                    class="mt-8 grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-y-4 md:gap-x-10 text-gray-700 text-md justify-center items-center">
+                    <div class="flex flex-col">
+                        <p>Prof. Avijit Bhowal</p>
+                        <p class="text-indigo-600 font-medium">Chem Engg Dept., JU, India</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Prof. Debashis Roy</p>
+                        <p class="text-indigo-600 font-medium">Chem Engg Dept., JU, India</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Prof. Ujjaini Sarkar</p>
+                        <p class="text-indigo-600 font-medium">Chem Engg Dept., JU, India</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Sri. Prasanta Kumar Banerjee</p>
+                        <p class="text-indigo-600 font-medium">Chem Engg Dept., JU, India</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Dr. Chanchal Mondal</p>
+                        <p class="text-indigo-600 font-medium">Chem Engg Dept., JU, India</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Dr. Ranjana Das</p>
+                        <p class="text-indigo-600 font-medium">Chem Engg Dept., JU, India</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Dr. Shyamal Roy</p>
+                        <p class="text-indigo-600 font-medium">Chem Engg Dept., JU, India</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Ms. Sujata Sardar</p>
+                        <p class="text-indigo-600 font-medium">Chem Engg Dept., JU, India</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Dr. Raj Kumar Das</p>
+                        <p class="text-indigo-600 font-medium">Chem Engg Dept., JU, India</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Prof. Runu Chakraborty</p>
+                        <p class="text-indigo-600 font-medium">Jadavpur University, India</p>
                     </div>
                 </div>
             </div>
@@ -510,19 +627,19 @@
         <div class="mx-auto max-w-md py-12 px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
             <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
                 <div class="px-5 py-2">
-                    <a href="/" class="text-base text-gray-400 hover:text-gray-300"> Home </a>
+                    <a href="index.html" class="text-base text-gray-400 hover:text-gray-300"> Home </a>
                 </div>
 
                 <div class="px-5 py-2">
-                    <a href="/centenary.html" class="text-base text-gray-400 hover:text-gray-300"> CHEMERVESCENCE </a>
+                    <a href="centenary.html" class="text-base text-gray-400 hover:text-gray-300"> CHEMERVESCENCE </a>
                 </div>
 
                 <div class="px-5 py-2">
-                    <a href="/iceis.html" class="text-base text-gray-400 hover:text-gray-300"> ICEIS </a>
+                    <a href="iceis.html" class="text-base text-gray-400 hover:text-gray-300"> ICEIS </a>
                 </div>
 
                 <div class="px-5 py-2">
-                    <a href="/sponsorship.html" class="text-base text-gray-400 hover:text-gray-300"> Sponsorship </a>
+                    <a href="sponsorship.html" class="text-base text-gray-400 hover:text-gray-300"> Sponsorship </a>
                 </div>
             </nav>
             <div class="mt-8 flex flex-col items-center justify-center gap-4">
@@ -555,6 +672,7 @@
     </footer>
 
     <script src="index.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
 </body>
 
 </html>
