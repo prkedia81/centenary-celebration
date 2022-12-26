@@ -1570,10 +1570,6 @@ select {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
-.bg-none {
-  background-image: none;
-}
-
 .from-purple-600 {
   --tw-gradient-from: #9333ea;
   --tw-gradient-to: rgb(147 51 234 / 0);
@@ -2749,10 +2745,6 @@ select {
     margin-top: 6rem;
   }
 
-  .md\:ml-0 {
-    margin-left: 0px;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -3041,10 +3033,6 @@ select {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .lg\:items-start {
